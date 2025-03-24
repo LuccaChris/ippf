@@ -6,21 +6,25 @@
   <link rel="icon" href="/src/img/Logo.svg">
   <title>Igreja Pentecostal Primitiva da Fé</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .carousel-item {
+      min-width: 100%; /* Faz com que os slides ocupem 100% do container */
+    }
+  </style>
 </head>
-<body>
+<body class="bg-gray-100">
   <header class="shadow">
-    <!-- Parte superior com logo e título -->
-    <div class="flex items-center justify-center px-6 bg-white">
-        <div class="flex items-center space-x-4">
-          <img src="/src/img/Logo.svg" alt="Logo" class="h-10 w-10">
-          <h1 class="text-xl font-bold">
-            <span class="text-blue-700">Igreja </span>
-            <span class="text-red-600">Pentecostal </span>
-            <span class="text-blue-700">Primitiva da Fé</span>
-          </h1>
-        </div>
+    <div class="flex items-center justify-center px-6 bg-white py-3">
+      <div class="flex items-center space-x-4">
+        <img src="/src/img/Logo.svg" alt="Logo" class="h-12 w-12">
+        <h1 class="text-xl font-bold">
+          <span class="text-blue-700">Igreja </span>
+          <span class="text-red-600">Pentecostal </span>
+          <span class="text-blue-700">Primitiva da Fé</span>
+        </h1>
       </div>
-    <!-- Barra de navegação -->
+    </div>
     <nav class="bg-blue-700">
       <div class="flex justify-center space-x-8 py-3">
         <a href="#" class="text-white text-sm font-semibold hover:underline">Quem somos</a>
@@ -30,58 +34,139 @@
       </div>
     </nav>
   </header>
-  <div class=" FBanner" >
-    <img class="" src="/src/img/Banner.png" alt="">
-</div>
-<div class="SBanner">
-    <img src="/src/img/radioBanner.png" alt="">
-    <h1>titulo</h1>
-    <p>texto</p>
-</div>
-<div class="TBanner">
-    <h1>titulo</h1>
-    <p>texto</p>
-    <img src="/src/img/Banner3.png" alt="">
-</div>
-<div class="QBanner">
-    <div class="relative w-full max-w-lg overflow-hidden">
-        <div id="carousel" class="flex transition-transform duration-700">
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/600x300/FF5733/FFFFFF?text=Slide+1" alt="Slide 1">
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/600x300/33A8FF/FFFFFF?text=Slide+2" alt="Slide 2">
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/600x300/28A745/FFFFFF?text=Slide+3" alt="Slide 3">
-            </div>
-        </div>
 
-        <!-- Botões de navegação -->
-        <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/50 text-white px-4 py-2 rounded-full">
-            &#10094; <!-- Seta esquerda -->
-        </button>
-        <button id="next" class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/50 text-white px-4 py-2 rounded-full">
-            &#10095; <!-- Seta direita -->
-        </button>
+<!--Banner principal-->
+
+  <main class="">
+    <div class="relative">
+      <img  src="/src/img/Banner.png" alt="Banner principal">
     </div>
-</div>
-<div class="QnBanner">
-    <img src="/src/img/QnBanner.png" alt="">
-    <h1>titulo</h1>
-    <p>text</p>
-    <button>contribuaçao voluntaria</button>
-</div>
-    <footer class="bg-blue-700 text-white text-center py-5">
-        <h1>Exceções especiais:</h1>
-            <p>
-        1°domingo do mês: Dois cultos  Ceia do Senhor às 8h da manhã e a noite culto às 18h. </p>
-         <p>   4° domingo do mês: 8h da manhã (não há culto à noite).</p>
-    </footer>
-    <script>
-        const carousel = document.getElementById('carousel');
 
-        </script>
+<!--Quem somos-->
 
+    <section class="text-center mt-8">
+      <div class="flex flex-col gap-2 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4">
+        <img class="mx-auto block h-75 rounded-full sm:mx-0 sm:shrink-0" src="/src/img/FotoGrupo.png" alt="Grupo de pessoas" />
+
+       <!--Texto justificado e em fonte regular-->
+
+        <div class="space-y-2 text-center sm:text-left">
+          <h2 class="text-lg font-semibold text-blue-700">Quem somos</h2>
+          <div class="space-y-0.5">
+            <p class="text-lg font-medium text-gray-700">Texto aqui! Justificado e em fonte regular.</p>
+            <p class="text-lg font-medium text-gray-700">A Igreja Pentecostal Primitiva da Fé é uma comunidade cristã dedicada a seguir os ensinamentos genuínos de Jesus Cristo e a viver uma vida fundamentada nos valores da Palavra de Deus. Nosso propósito é pregar o Evangelho, resgatar vidas e fortalecer a fé daqueles que buscam um relacionamento verdadeiro e profundo com o Senhor.</p>
+
+        <p class="text-lg font-medium text-gray-700">Somos uma igreja que valoriza a simplicidade do Evangelho e busca a comunhão genuína entre irmãos, guiados pelo poder transformador do Espírito Santo. Aqui, cada membro é acolhido com amor, independentemente de sua trajetória, pois cremos que o amor de Deus é para todos e que Ele tem um propósito especial para cada vida.</p>
+
+        <p class="text-lg font-medium text-gray-700">Nossa missão é ser uma luz em meio às trevas, levando esperança, paz e salvação àqueles que mais precisam. Por meio da oração, do louvor e do estudo da Palavra, fortalecemos nossa caminhada cristã e buscamos diariamente a santidade, reconhecendo que somente em Jesus encontramos a verdadeira vida e redenção.</p>
+
+        <p class="text-lg font-medium text-gray-700">Na Igreja Pentecostal Primitiva da Fé, você encontrará um espaço de adoração sincera, crescimento espiritual e serviço ao próximo. Somos um povo que espera com fé a volta de Cristo e que deseja, enquanto espera, cumprir fielmente a missão que nos foi confiada: amar a Deus acima de todas as coisas e ao próximo como a nós mesmos.</p>
+
+        <p class="text-lg font-medium text-gray-700"><strong>Venha fazer parte da nossa família e viver conosco a alegria da presença de Deus. Aqui, você tem um lugar especial reservado no coração do Pai.</strong></p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+<!--Pastor Presidente-->
+
+<section class=" bg-blue-700 3xl:text-left flex justify-between  ">
+  <div class="flex flex-row-reverse items-center  mx-auto">
+    <img class="ml-[150px]" src="/src/img/Pastor.png" alt="Pastor Presidente">
+    <div class="text-left p-20 ml-[100px]">
+      <h2 class="text-3xl font-bold text-white mb-[25px] ">Conheça o Pastor Presidente</h2>
+      <p class="text-[25px] text-white leading-snug text-justify mt-[25px]">
+        Texto aqui, justificado e em tamanho 40, fonte regular.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--Nossos Grupos-->
+
+<section class="mt-12 text-center">
+  <h2 class="text-2xl font-bold text-red-700 mb-20">Nossos Grupos</h2>
+  <div class="relative w-full max-w-lg mx-auto mt-4 overflow-hidden mt-25">
+    <div id="carousel" class="flex transition-transform duration-700">
+      <div class="carousel-item flex justify-center items-center w-full">
+        <img class="w-100" src="/src/img/invert.jpg" alt="">
+      </div>
+      <div class="carousel-item flex justify-center items-center w-full">
+        <img class="w-100 " src="/src/img/invert.jpg" alt="">
+      </div>
+      <div class="carousel-item flex justify-center items-center w-full">
+        <img class="w-100 " src="/src/img/invert.jpg" alt="">
+      </div>
+    </div>
+
+    <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/50 text-white px-4 py-2 rounded-full">
+      &#10094;
+    </button>
+    <button id="next" class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/50 text-white px-4 py-2 rounded-full">
+      &#10095;
+    </button>
+  </div>
+</section>
+
+<!--Projeto------------------------------------------------------------------------------------------------------------------------>
+
+<section class="text-center mt-8">
+  <div class="flex flex-col gap-4 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4">
+    <!-- Imagem -->
+    <img class="mx-auto block h-96 rounded-lg sm:mx-0 sm:shrink-0 rounded-full drop-shadow-[0_0_14px_#000]" src="/src/img/GrandeTemplo.png" alt="Grande Templo" />
+
+    <!-- Texto -->
+    <div class="space-y-4 text-center sm:text-left">
+      <h2 class="text-3xl font-semibold text-blue-700">Projeto: O Grande Templo da Glória do Senhor Jesus</h2>
+      <p class="text-lg font-medium text-gray-700 text-justify">
+        O projeto do Grande Templo da Glória do Senhor Jesus é um marco de fé e dedicação. Com uma estrutura imponente, este espaço foi idealizado para ser um local de adoração, comunhão e busca pela presença de Deus.
+      </p>
+      <p class="text-lg font-medium text-gray-700 text-justify">
+        Nossa visão é proporcionar um ambiente acolhedor, onde cada pessoa possa experimentar o amor divino e fortalecer sua caminhada espiritual. Com esse propósito, estamos empenhados na construção deste grande templo, confiando na provisão e na graça do Senhor.
+      </p>
+      <p class="text-lg font-medium text-gray-700 text-justify">
+        Você pode fazer parte dessa obra grandiosa! Sua contribuição voluntária é essencial para que esse sonho se torne realidade e possamos impactar vidas através da fé.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Botão de Contribuição Voluntária -->
+<div class="text-center mt-8">
+  <button class="bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-800">
+    Contribuição Voluntária
+  </button>
+</div>
+
+<!------Rodapé--------------------------------------------------------------------------------------------------------------------->
+
+  <footer class="bg-blue-700 text-white text-center py-6 mt-12">
+    <h3 class="text-3xl font-bold">Horários de Culto</h3>
+    <p class="mt-2 text-lg mt-8"><strong>Terça-feira</strong> - 20h | <strong>Quinta-feira</strong> - 20h |</p>
+      <p class="mt-2 text-lg mt-8"> <strong>Sábado</strong> - 19h30 | <strong>Domingo</strong> - 18h |</p>
+      <h3 class="text-lg mt-12"><strong>Exceçoes especiais:</strong></h3>
+    <p class="mt-2 text-lg">
+      1° domingo do mês: Dois cultos - <strong>Ceia do Senhor</strong> às 8h da manhã e à noite culto às 18h. <br>
+      4° domingo do mês: 8h da manhã <strong>(não há culto à noite).</strong>
+    </p>
+  </footer>
+
+//Script para o carrossel
+
+  <script>
+    const carousel = document.getElementById('carousel');
+    let currentIndex = 0;
+    
+    document.getElementById('next').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % 3;
+      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + 3) % 3;
+      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    });
+  </script>
 </body>
 </html>
