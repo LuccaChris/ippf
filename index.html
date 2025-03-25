@@ -64,15 +64,20 @@
 
 <!--Pastor Presidente-->
 
-<section class=" bg-blue-700 3xl:text-left flex justify-between  ">
-  <div class="flex flex-row-reverse items-center  mx-auto">
-    <img class="ml-[150px]" src="src/image/Pastor.png" alt="Pastor Presidente">
-    <div class="text-left p-20 ml-[100px]">
-      <h2 class="text-3xl font-bold text-white mb-[25px] ">Conheça o Pastor Presidente</h2>
-      <p class="text-[25px] text-white leading-snug text-justify mt-[25px]">
-        Texto aqui, justificado e em tamanho 40, fonte regular.
-      </p>
-    </div>
+<section class="bg-blue-700 flex justify-between ">
+  <!-- Texto Responsivo -->
+  <div class="text-white mt-6 md:mt-0 w-full max-w-3xl px-4 pt-7 pb-2 relative z-0">
+    <h2 class="text-2xl font-bold sm:text-3xl lg:text-4xl mb-4">
+      Conheça o Pastor Presidente
+    </h2>
+    <p class="text-lg sm:text-xl lg:text-2xl leading-relaxed text-justify">
+      Texto aqui, justificado e responsivo, ajustado para diferentes telas.
+    </p>
+  </div>
+  
+  <!-- Imagem Responsiva, colada ao lado direito -->
+  <div class="flex justify-end w-full max-w-[300px] md:max-w-[400px] lg:max-w-[500px]">
+    <img class="w-full object-cover relative z-10 " src="src/image/Pastor.png" alt="Pastor Presidente">
   </div>
 </section>
 
@@ -105,9 +110,9 @@
 <!--Projeto------------------------------------------------------------------------------------------------------------------------>
 
 <section class="text-center mt-8">
-  <div class="flex flex-col gap-4 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4">
+  <div class="flex flex-col gap-4 p-6 md:flex-row md:items-center md:gap-8 md:py-6">
     <!-- Imagem -->
-    <img class="mx-auto block h-96 rounded-lg sm:mx-0 sm:shrink-0 rounded-full drop-shadow-[0_0_14px_#000]" src="src/image/GrandeTemplo.png" alt="Grande Templo" />
+    <img class="mx-auto block h-64 w-64 rounded-full object-cover md:h-64 md:w-64 lg:h-80 lg:w-80 xl:h-96 xl:w-96 2xl:h-112 2xl:w-112 rounded-full drop-shadow-[0_0_14px_#000]" src="src/image/GrandeTemplo.png" alt="Grande Templo" />
 
     <!-- Texto -->
     <div class="space-y-4 text-center sm:text-left">
@@ -145,7 +150,7 @@
     </p>
   </footer>
 
-//Script para o carrossel
+<!-----------Script para o carrossel----------------------------------------------------------------------------------------->
 
   <script>
     const carousel = document.getElementById('carousel');
